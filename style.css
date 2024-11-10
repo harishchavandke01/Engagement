@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFBBF0, #FFD700);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section Styling */
+  .hero-section {
+    background: linear-gradient(135deg, #FF758C, #FBC69F);
+    color: #cb5c5c;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  /* Hero Section Text Animations */
+  .hero-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #FFD700;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #8a6706;
+    font-style: italic;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .hero-date {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: #FFBF00;
+    animation: fadeIn 3s ease-out;
+  }
+  
+  /* Welcome & Blessings Section */
+  .welcome-section, .blessings-section {
+    background-color: #fff;
+    color: #FF758C;
+    padding: 40px 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-section h2, .blessings-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .welcome-section p, .blessings-section p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Gallery Styling */
+  .gallery {
+    padding-top: 10px;
+  }
+  
+  .gallery h3 {
+    color: #FF758C;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Gallery Photo Styling */
+  .gallery-photo {
+    max-width: 100%;
+    border: 2px solid #FF758C;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+  }
+  
+  .gallery-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  

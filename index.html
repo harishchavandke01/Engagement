@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harish & Komal's Engagement</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Library for Scroll Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom Fonts (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-light p-5" data-aos="fade-up">
+    <h1 class="hero-title" data-aos="fade-right" data-aos-duration="1000">Harish ❤️ Komal</h1>
+    <p class="hero-subtitle" data-aos="fade-left" data-aos-duration="1500">Hand in hand, heart to heart, we’ll walk this life together.</p>
+    <h3 class="save-date" data-aos="zoom-in" data-aos-duration="2000">Save the Date: 25th December 2024</h3>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section text-center py-4" data-aos="fade-up" data-aos-delay="500">
+    <h2>Welcome to Our Engagement</h2>
+    <p class="lead">We are so happy to share this beautiful moment with all of you!</p>
+  </section>
+
+  <!-- Blessings Section -->
+  <section class="blessings-section text-center py-4" data-aos="fade-up" data-aos-delay="700">
+    <h2>Bring Your Blessings</h2>
+    <p class="lead">Your love and blessings mean the world to us as we embark on this beautiful journey of life together.</p>
+  </section>
+
+  <!-- Photo Gallery -->
+  <div class="container gallery text-center my-3" data-aos="fade-up" data-aos-delay="200">
+    <h3 data-aos="fade-down" data-aos-duration="1500">Our Moments</h3>
+    <div class="row">
+      <div class="col-6 mb-3" data-aos="flip-left" data-aos-delay="300">
+        <img src="photos/1.jpeg" alt="Photo 1" class="img-fluid img-thumbnail gallery-photo">
+      </div>
+      <div class="col-6 mb-3" data-aos="flip-left" data-aos-delay="400">
+        <img src="photos/2.jpeg" alt="Photo 2" class="img-fluid img-thumbnail gallery-photo">
+      </div>
+      <div class="col-6 mb-3" data-aos="flip-left" data-aos-delay="500">
+        <img src="photos/3.jpeg" alt="Photo 3" class="img-fluid img-thumbnail gallery-photo">
+      </div>
+      <div class="col-6 mb-3" data-aos="flip-left" data-aos-delay="600">
+        <img src="photos/4.jpeg" alt="Photo 4" class="img-fluid img-thumbnail gallery-photo">
+      </div>
+      <div class="col-6 mb-3" data-aos="flip-left" data-aos-delay="700">
+        <img src="photos/6.jpeg" alt="Photo 5" class="img-fluid img-thumbnail gallery-photo">
+      </div>
+      <div class="col-6 mb-3" data-aos="flip-left" data-aos-delay="800">
+        <img src="photos/5.jpeg" alt="Photo 6" class="img-fluid img-thumbnail gallery-photo">
+      </div>
+      <div class="col-6 mb-3" data-aos="flip-left" data-aos-delay="900">
+        <img src="photos/7.jpeg" alt="Photo 7" class="img-fluid img-thumbnail gallery-photo">
+      </div>
+      <div class="col-6 mb-3" data-aos="flip-left" data-aos-delay="1000">
+        <img src="photos/9.jpeg" alt="Photo 8" class="img-fluid img-thumbnail gallery-photo">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS (for Scroll Animations) -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Confetti Animation (Celebrate) -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+  <script>
+    // Initialize AOS Animations
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Confetti Celebration Animation
+    window.onload = function() {
+      confetti({
+        particleCount: 100,
+        spread: 90,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
+</body>
+</html>
