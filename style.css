@@ -12,6 +12,8 @@ body {
 /* Hero Section Styling */
 .hero-section {
     position: relative;
+    background: url('/photos/bg.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
     color: #fff;
     padding: 120px 20px;
     text-align: center;
