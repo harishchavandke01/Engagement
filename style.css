@@ -1,98 +1,164 @@
 /* General Styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #FFBBF0, #FFD700);
+    font-family: 'Dancing Script', cursive; /* Elegant cursive font for engagement theme */
+    background: linear-gradient(135deg, #FFB6C1, #FFD700); /* Soft pink and gold gradient background */
     color: #333;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: 'Great Vibes', cursive;
+    line-height: 1.6;
 }
 
 /* Hero Section Styling */
 .hero-section {
-    background: linear-gradient(135deg, #FF758C, #FBC69F);
-    color: #cb5c5c;
-    padding: 50px 20px;
+    position: relative;
+    background: url('/photos/bg.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    color: #fff;
+    padding: 120px 20px;
     text-align: center;
-    border-radius: 8px;
-    margin-top: 30px;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 90%;
+    width: 80%;
+}
+
+/* Hero Section Overlay with Blur */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    backdrop-filter: blur(1px); /* Blur effect on background */
+    z-index: -1; /* Keep the overlay behind the text */
+    border-radius: 15px;
 }
 
 /* Hero Section Text Animations */
 .hero-title {
     font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     animation: fadeIn 2s ease-out;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-top: 10px;
-    color: #8a6706;
+    color: #f9d342;
     font-style: italic;
     animation: fadeIn 2s ease-out;
 }
 
 .hero-date {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 15px;
     color: #FFBF00;
+    font-weight: bold;
     animation: fadeIn 3s ease-out;
 }
 
 /* Welcome & Blessings Section */
 .welcome-section, .blessings-section {
-    background-color: #fff;
-    color: #FF758C;
-    padding: 40px 15px;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    font-family: 'Great Vibes', cursive; /* Apply cursive font */
-    font-size: 0.9rem; /* Make font size small */
+    background: rgba(255, 255, 255, 0.85); /* Slightly transparent white */
+    backdrop-filter: blur(5px); /* Subtle blur effect */
+    color: #FF758C; /* Soft pinkish color */
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    text-align: center;
 }
 
-/* Heading in Welcome & Blessings Section */
 .welcome-section h2, .blessings-section h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px; /* Add space below heading */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #FF6F61;
 }
 
-/* Paragraphs in Welcome & Blessings Section */
 .welcome-section p, .blessings-section p {
-    font-size: 1.3rem; /* Make font size smaller */
+    font-size: 1.3rem;
     font-style: italic;
     color: #555;
-    text-align: center;
-    margin-top: 15px; /* Add space above paragraph */
+    margin-top: 15px;
 }
 
-/* Gallery Styling */
+/* Gallery Section */
 .gallery {
-    padding-top: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Light opaque background */
+    backdrop-filter: blur(6px); /* Soft blur effect */
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
 }
 
 .gallery h3 {
     color: #FF758C;
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
     animation: fadeIn 2s ease-out;
 }
 
 /* Gallery Photo Styling */
 .gallery-photo {
     max-width: 100%;
-    border: 2px solid #FF758C;
+    border: 3px solid #FF758C;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-photo:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Ring Image Styling */
+.ring-img {
+    width: 100px; /* Adjust size for elegance */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    animation: zoomIn 2s ease-out;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #FF758C; /* Soft pink footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
 }
