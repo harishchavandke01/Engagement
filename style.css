@@ -13,7 +13,7 @@ body {
 .hero-section {
     position: relative;
     /* background-image: url('photos/bg.jpg'); */
-    background-color: purple;
+    background: purple;
     /* background: url('https://cdn.wallpapersafari.com/58/21/6HO29a.jpg') no-repeat center center fixed;  */
     background-size: cover;
     color: #fff;
