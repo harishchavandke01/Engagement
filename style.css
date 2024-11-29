@@ -13,7 +13,7 @@ body {
 .hero-section {
     position: relative;
     /* background-image: url('photos/bg.jpg'); */
-    background: purple;
+    /* background: purple; */
     /* background: url('https://cdn.wallpapersafari.com/58/21/6HO29a.jpg') no-repeat center center fixed;  */
     background-size: cover;
     color: #fff;
@@ -33,7 +33,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    background: rgba(158, 62, 227, 0.5); /* Dark overlay for contrast */
     backdrop-filter: blur(1px); /* Blur effect on background */
     z-index: -1; /* Keep the overlay behind the text */
     border-radius: 15px;
